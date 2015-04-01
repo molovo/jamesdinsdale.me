@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>James Dinsdale - Curriculum Vitae</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Favicons
+  ================================================== -->
+	<link rel="shortcut icon" href="img/logo.png">
+
+	<script type="text/javascript" src="//use.typekit.net/bpi3pwn.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<script>
+	  (function () {
+	    function addFont() {
+	      var style = document.createElement( 'style' );
+	      style.rel = 'stylesheet';
+	      document.head.appendChild( style );
+	      style.textContent = localStorage.gauthier;
+	    }
+
+	    try {
+	      if ( localStorage.gauthier ) {
+	        // The font is in localStorage, we can load it directly
+	        addFont();
+	      } else {
+	        // We have to first load the font file asynchronously
+	        var request = new XMLHttpRequest();
+	        request.open( 'GET', '//molovo.co/assets/fonts/gauthier_fy/molovo.css', true );
+
+	        request.onload = function () {
+	          if ( request.status >= 200 && request.status < 400 ) {
+	            // We save the file in localStorage
+	            localStorage.gauthier = request.responseText;
+
+	            // ... and load the font
+	            addFont();
+	          }
+	        }
+
+	        request.send();
+	      }
+	    } catch ( ex ) {
+	      // maybe load the font synchronously for woff-capable browsers
+	      // to avoid blinking on every request when localStorage is not available
+	      var link = document.createElement( 'link' );
+	      link.rel = 'stylesheet';
+	      link.href = '//molovo.co/assets/fonts/gauthier_fy/molovo.css';
+	      document.head.appendChild( link );
+	    }
+	  })();
+  </script>
+</head>
+<body>
+	<div class="container">
+
+		<aside class="grid 1of4 keep-shape" id="logo">
+			<div class="grid 1of1 spacer"></div>
+
+			<a href="#top"><img src="img/logo.png" alt="James Dinsdale's personal logo" class="grid 1of1 logo-img"></a>
+			<p class="grid 1of1 remove-padding">
+				<span class="grid 1of1">
+					Hey, I&rsquo;m James.<br />
+					I make websites.
+				</span>
+
+				<h6 class="grid 1of1 stick-to-grid yellow">
+					<a href="#experience">Experience</a><br />
+					<a href="#open-source">Open Source</a><br />
+					<a href="#skills">Skills</a><br />
+					<a href="#education">Education</a><br />
+					<!-- <a href="#interests">Hobbies and Interests</a> -->
+				</h6>
+
+				<h6 class="grid 1of1 stick-to-grid yellow">
+					<a href="James Dinsdale - Curriculum Vitae.pdf">Download a PDF</a>
+				</h6>
+			</p>
+		</aside>
+
+		<main role="main" class="grid 3of4 offset-3 keep-shape content">
+
+			<div class="grid 1of1 spacer"></div>
+
+			<header class="grid 1of1">
+				<h1 class="grid 1of1 remove-padding">
+					<span class="light">James</span>
+					<br class="mobile" />
+					Dinsdale</h1>
+				<p style="letter-spacing: -.4em;">
+					<a href="http://molovo.co.uk" target="_blank">molovo.co.uk</a>
+					<a href="mailto:hi@molovo.co.uk" target="_blank">hi@molovo.co.uk</a>
+					<a href="tel:07540609484" target="_blank">07540 609 484</a>
+					<a href="http://twitter.com/molovo" target="_blank">@molovo</a>
+				</p>
+			</header>
+
+			<section class="grid 1of1" id="experience">
+				<h2 class="yellow">Experience</h2>
+
+				<article id="molovo">
+					<h4>
+						Freelance Web Designer - Molovo
+						<small>Mar 2009 - Present</small>
+					</h4>
+					<p>
+						Working mainly with small businesses and freelancers, as well as creating my own products, I'm passionate about empowering users through simple, responsive, accessible design.
+					</p>
+					<p><a class="more-info" href="#molovo-details">More Information on this Role.</a></p>
+
+					<aside class="details" id="molovo-details">
+						<a href="#molovo" class="close-details">X</a>
+
+						<h4 class="grid 1of1 stick-to-grid">
+							Molovo<br />
+							<small>Mar 2009 - Present</small>
+						</h4>
+
+						<div class="grid 1of1 spacer"></div>
+
+						<h6 class="grid 1of6">Role</h6>
+						<section class="grid 5of6">
+							<p>
+								Covering all aspects of website design and development, from initial sketches to CMS integration. I pride myself in enlightening my clients with the virtues of responsive design, clean typography and accessibility, and putting this into practice with a high proficiency in HTML, CSS, JavaScript, jQuery, PHP and SQL.
+							</p>
+
+							<p>
+								More detailed case studies of the work I have done can be found in <a href="http://molovo.co">my portfolio</a>.
+							</p>
+						</section>
+
+						<h6 class="grid 1of6">Successes</h6>
+						<section class="grid 5of6">
+							<p>
+								A year working as a designer and front-end developer for Omnia, a company which builds legal costs budgeting software. After I completely redesigned their flagship application from the ground up, Omnia has gone on to become one of the leading legal software providers in the UK.
+							</p>
+
+							<p>
+								A website and online auction catalogue for a charity event in aid of <a href="http://faceingafrica.com">Facing Africa</a>, which contributed to raising over &pound;10,000 to directly help Noma victims in Ethiopia.<br />
+								<!--<a href="http://molovo.co.uk/facing-africa" target="_blank">View a Case Study &rarr;</a>-->
+							</p>
+
+							<p>
+								An online magazine called The Branch, publishing articles from people in the creative industry. The magazine was read by over 5000 people in its first month, and continues to attract both new readers and well-known writers from the industry.<br />
+								<a href="http://thebran.ch" target="_blank">Visit the Website &rarr;</a>
+							</p>
+
+							<!-- <p>
+								I created a responsive site for Bath Moravian Church, expanding their online audience to include mobile visitors for the first time. I also devised some innovative methods for content-entry, allowing the client to easily caption images and other content accessibly, and to share documents and audio of recorded sermons with their readers.<br />
+								<a href="http://molovo.co.uk/blog/keep-it-simple-stupid" target="_blank">View a blog post on the content-entry methods &rarr;</a>
+							</p> -->
+						</section>
+					</aside>
+				</article>
+
+				<article id="dba">
+					<h4>
+						Database Administrator - MOD
+						<small>Oct 2010 - May 2013</small>
+					</h4>
+
+					<h6></h6>
+					<p>
+						Responsible for the MOD's self-service human resources application and database, in two years I transformed this system into one that is largely self-supporting, inluding automated backups, environment refreshes, disaster recovery and server housekeeping.
+					</p>
+
+					<p>
+						Also delivered secondary technical support and monitoring for ~100 other databases within the organisation.
+					</p>
+
+					<p><a class="more-info" href="#dba-details">More Information on this Role.</a></p>
+
+					<aside class="details" id="dba-details" style="letter-spacing: -.4em;">
+						<a href="#dba" class="close-details">X</a>
+
+						<h4 class="grid 1of1 stick-to-grid">
+							Ministry of Defence<br />
+							<small>Oct 2010 - May 2013</small>
+						</h4>
+
+						<div class="grid 1of1 spacer"></div>
+
+						<h6 class="grid 1of6">Role</h6>
+						<section class="grid 5of6">
+							<p>
+								In this position I was part of a two man team acting as the focal point within the MOD for the database and application infrastructure behind PeopleSoft HRMS. This system is an Oracle product which provides self-service HR administration for MOD employees, and requires 24/7 uptime. I supported the Production Environment, as well as a number of Development, Testing, Training, Sandbox and Disaster Recovery environments, spread across two geographical locations.
+							</p>
+
+							<p>
+								As part of this I was required to ensure that system uptime meets an agreed SLA of 97.5%, whilst also providing 3<sup>rd</sup> and 4<sup>th</sup> line support to more than 80,000 customers using the Production system, and over 100 developers and testers.
+							</p>
+
+							<p>
+								I addition to this, I also administrated a number of other systems within the organisation as part of a larger team. In total this comprised ~100 databases across 14 different applications, covering Production, Testing, Development, Sandbox and Training environments.
+							</p>
+						</section>
+
+						<h6 class="grid 1of6">Successes</h6>
+						<section class="grid 5of6">
+							<p>
+								Taking a proactive approach to my role, and to compensate for shrinking staff levels, I automated a number of processes which had previously been carried out manually, to allow more man hours to be devoted to support of the systems. These processes included refreshes of development environments, database backups, FTP/SFTP data transfers and server housekeeping.
+							</p>
+
+							<p>
+								I implemented an online password reset tool for HRMS to allow users to reset their password without needing to call the customer service helpdesk, realising a considerable cost saving thanks to the reduced number of calls.
+							</p>
+
+							<p>
+								I also planned and carried out a significant upgrade to the PeopleTools software which supports HRMS - the first time that this type of upgrade had been performed within the organisation without support from external contractors.
+							</p>
+
+							<p>
+								I used proactive monitoring and administration of the systems to ensure that the target of 99.5% system up-time was exceeded, demonstrating my ability to react to and resolve incidents quickly and efficiently.
+							</p>
+						</section>
+					</aside>
+				</article>
+
+				<article id="cai">
+					<h4>
+						IT Classroom Administrator - MOD
+						<small>May 2008 - Oct 2010</small>
+					</h4>
+
+					<h6></h6>
+					<p>
+						As administrator of the Royal School of Artillery's IT training classrooms, I was responsible for the maintenance, upkeep and improvement of the bespoke hardware and software within the classrooms, allowing the school to provide training to over 5000 soldiers a year.
+					</p>
+
+					<p><a class="more-info" href="#cai-details">More Information on this Role.</a></p>
+
+					<aside class="details" id="cai-details" style="letter-spacing: -.4em;">
+						<a href="#cai" class="close-details">X</a>
+						<h4 class="grid 1of1 stick-to-grid">
+							Ministry of Defence<br />
+							<small>May 2008 - Oct 2010</small>
+						</h4>
+
+						<div class="grid 1of1 spacer"></div>
+
+						<h6 class="grid 1of6">Role</h6>
+						<section class="grid 5of6">
+							<p>
+								I was responsible for the BOWMAN Command Systems training suites at the Royal School of Artillery, which host a number of bespoke applications used by the Army in Operational Theatres. I provided support for 12 networked classrooms with 334 computers, a server room running 14 linked server systems, and 3 independent standalone systems, all delivering mission critical training to approximately 5000 soldiers per year.
+							</p>
+						</section>
+
+						<h6 class="grid 1of6">Successes</h6>
+						<section class="grid 5of6">
+							<p>
+								I ensured that over 95% of issues with classroom hardware or software were either resolved or reffered to the support contractor within 24 hours.
+							</p>
+
+							<p>
+								I successfully oversaw and planned the resource allocation for a technical refresh of all PCs under my control. This refresh was completed to time, cost and specification.
+							</p>
+
+							<p>
+								I oversaw the refurbishment and equipment installation of two brand new classrooms; again completed to time, cost and specification.
+							</p>
+						</section>
+
+					</aside>
+				</article>
+			</section>
+
+			<section class="grid 1of1" id="open-source">
+				<h2 class="yellow">Open Source</h2>
+
+				<p>
+					The large number of Open Source contributions I have made can be viewed on my <a href="http://github.com/molovo">Github</a> and <a href="http://bitbucket.com/molovo">Bitbucket</a> profiles.
+				</p>
+
+				<p>
+					Here are some of my more notable projects:
+
+					<ul>
+						<li>
+							<span class="list-title"><a target="_blank" href="https://bitbucket.org/molovo/melody">Melody</a></span>
+							<span class="list-content">a CSS grid framework. A new version is in the works and can be found <a target="_blank" href="http://github.com/melodycss/melody">here</a>.</span>
+						</li>
+						<li>
+							<span class="list-title"><a target="_blank" href="https://github.com/wilde-io">Wilde</a></span>
+							<span class="list-content">a PHP based Content Management System [WIP].</span>
+						</li>
+						<li>
+							<span class="list-title"><a target="_blank" href="https://github.com/wilde-io/validator">Validator</a></span>
+							<span class="list-content">A JavaScript port of Laravel's validation mechanism, for use on the front end.</span>
+						</li>
+						<li>
+							<span class="list-title"><a target="_blank" href="https://github.com/wilde-io/dates">Dates</a></span>
+							<span class="list-content">A HTML date input Polyfill for use in browsers which do not support the native HTML5 date field.</span>
+						</li>
+						<li>
+							<span class="list-title"><a target="_blank" href="https://github.com/wilde-io/route">Route</a></span>
+							<span class="list-content">A very lightweight JavaScript route matching script.</span>
+						</li>
+						<li>
+							<span class="list-title"><a target="_blank" href="https://theme.wordpress.com/themes/bushwick/">Bushwick</a></span>
+							<span class="list-content">A Wordpress theme, which I designed and developed for Anchor CMS, and was ported to Wordpress by Automattic. Currently the 139th most popular theme on Wordpress.com, having received over 26,000 downloads in its first year.</span>
+						</li>
+					</ul>
+				</p>
+			</section>
+
+			<section class="grid 1of1" id="skills">
+				<h2 class="yellow">Skills</h2>
+
+				<p>
+					As well as a keen eye for design, I have experience with high level development in the following languages:
+
+					<ul>
+						<li><span class="list-title">HTML</span><span class="list-content">including templating engines such as Jade, HAML, Handlebars, Mustache and Laravel Blade</span></li>
+						<li><span class="list-title">CSS</span><span class="list-content">including SASS, LESS, Roole and Stylus</span></li>
+						<li><span class="list-title">JavaScript</span><span class="list-content">including jQuery and Backbone, and some Node.js with the Express and Sails frameworks</span></li>
+						<li><span class="list-title">PHP</span><span class="list-content">including the Laravel and Nano frameworks</span></li>
+					</ul>
+				</p>
+			</section>
+
+			<section class="grid 1of1" id="education">
+				<h2 class="yellow">Education</h2>
+
+				<article id="a-levels">
+					<h4>
+						A Levels
+						<small>Sep 2006 - Jun 2007</small>
+					</h4>
+
+					<p>
+						A Level Maths<br />
+						AS Level Physics<br />
+						AS Level English Literature
+					</p>
+
+					<h4>
+						GCSE
+						<small>Sep 2004 - Jun 2006</small>
+					</h4>
+
+					<p><strong>14</strong> Grade A* - C</p>
+
+				</article>
+
+				<!-- <article id="additional-quals">
+					<h4>
+						Additional Training
+					</h4>
+
+					<p class="grid 1of2 remove-padding stick-to-grid">Oracle DBA Part 1</p>
+					<p class="grid 1of2 remove-padding stick-to-grid">Jan 2012</p>
+				</article> -->
+			</section>
+
+			<!-- <section class="grid 1of1" id="interests">
+				<h2 class="yellow">Hobbies and Interests</h2>
+
+				<article>
+					<p>
+						A keen squash player, rugby fan and guitarist, my interests convey both my competitive and creative natures.
+					</p>
+
+					<p>
+
+					</p>
+
+					<p></p>
+				</article>
+			</section> -->
+		</main>
+	</div>
+
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+
+</body>
+</html>
