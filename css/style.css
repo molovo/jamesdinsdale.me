@@ -86,8 +86,8 @@ p, ul, ol, dl, blockquote {
 }
 
     em { font-style: italic; }
-    strong { font-weight: 600; }
-    small { font-size: 60%; line-height: 150%; }
+    strong { font-weight: 700; }
+    small { font-size: .75em; }
 
     .center { text-align: center; }
     .lalign { text-align: left; }
@@ -359,7 +359,7 @@ body {
 	font-family: "GauthierFY";
 	color: rgb(40,40,40);
 	background: #f7f5f0;
-	font-weight: 400;
+	font-weight: 300;
 	height: 100%;
 	width: 100%;
 }
@@ -377,13 +377,14 @@ h5, h6 {
 
 li > .list-title {
 	display: inline-block;
+  float: left;
 	width: 9em;
-	max-width: 25%;
 	vertical-align: top;
 }
 li > .list-content {
 	display: inline-block;
-	max-width: 75%;
+  float: left;
+  width: calc(100% - 9em);
 	vertical-align: top;
 	margin-bottom: 1.5em;
 }
@@ -391,7 +392,7 @@ li > .list-content {
 a,a:visited { color: #D6A600; }
 a:hover { color: #232531;}
 
-.light { font-weight: 400; }
+.light { font-weight: 300; }
 
 .intro h1 {
 	font-family: "giddyup-std";
@@ -405,17 +406,18 @@ a:hover { color: #232531;}
 	font-weight: 400;
 }
 
-header > p > a {
-	letter-spacing: 0;
+header > .links > li {
+  display: inline-block;
 	margin-right: 1.5em;
+  font-family: "GauthierFY";
 }
 	@media (max-width: 604px) {
-		header > p > a {
+		header > .links > li {
 			margin-right: .75em;
 		}
 	}
 	@media only screen and (max-width: 556px) {
-		header > p > a {
+		header > .links > li {
 			display: block;
 		}
 	}
@@ -423,16 +425,20 @@ header > p > a {
 .logo-img { max-width: 168px;
 max-height: 168px; }
 
+.main h6 {
+  margin-bottom: 0;
+}
+
 .grid.spacer { padding: 2em 0; }
 
-.download {
+/*.download {
 	max-width: 168px;
 	font-family: "proxima-nova";
 	font-weight: 700;
 	text-decoration: none;
 	font-size: 0.8em;
 	box-sizing: border-box;
-}
+}*/
 /*
 .download:hover {
 	color: #232531;
@@ -444,9 +450,15 @@ article {
 }
 
 article > h4 small,
+article > h5 small,
 article > h6 small {
+  display: block;
+}
+
+article > h4 span,
+article > h5 span,
+article > h6 span {
 	float: right;
-	margin-top: .37em;
 }
 
 aside#molovo-details,
@@ -603,7 +615,7 @@ section#skills {
 		top: 0px;
 		/*left: 6%;*/
 	}
-	.download { position: relative; top: 1.5em; }
+	/*.download { position: relative; top: 1.5em; }*/
 }
 
 @media (min-width: 960px) {
@@ -659,7 +671,7 @@ section#skills {
 		aside#logo p {
 			font-size: .82em;
 		}
-		aside#logo h6 {
+		aside#logo .download {
 			display: none;
 		}
 
@@ -679,48 +691,7 @@ section#skills {
 			right: 0px;
 		}
 
-		aside#molovo-details,
-		aside#cai-details,
-		aside#dba-details {
-			box-shadow: none;
-			display: none !important;
-		}
-
-		article#GCSE {
-			margin-bottom: 1.5em;
-		}
-
-		article.skill {
-			width: 25% !important;
-		}
-		article.skill > p.skill-text {
-			padding-top: 73%;
-			font-size: .8em;
-		}
-		article.skill > p.skill-text.javascript {
-			padding-top: 58% !important;
-		}
-		article.skill > p.skill-text.peoplesoft {
-			padding-top: 60% !important;
-		}
-
-		section#education {
-			margin-top: 6em;
-		}
-
-		section#interests {
-			margin-top: 3em;
-		}
-
-		/*#open-source {
-			margin-top: 1em !important;
-		}*/
-
-		#skills {
-			margin-top: -1.5em !important;
-		}
-
-		#education, #interests {
-			margin-top: -1.5em !important;
+		section#open-source {
+			margin-top: 9em;
 		}
 	}
