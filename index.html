@@ -41,7 +41,7 @@
 	      } else {
 	        // We have to first load the font file asynchronously
 	        var request = new XMLHttpRequest();
-	        request.open( 'GET', '//molovo.co/assets/fonts/gauthier_fy/molovo.css', true );
+	        request.open( 'GET', '/css/gauthier.css', true );
 
 	        request.onload = function () {
 	          if ( request.status >= 200 && request.status < 400 ) {
@@ -72,7 +72,7 @@
 		<aside class="grid 1of4 keep-shape" id="logo">
 			<div class="grid 1of1 spacer"></div>
 
-			<a href="#top"><img src="img/logo.png" alt="James Dinsdale's personal logo" class="grid 1of1 logo-img"></a>
+			<a href="#top"><img src="/img/logo.png" alt="James Dinsdale's personal logo" class="grid 1of1 logo-img"></a>
 			<p class="grid 1of1 remove-padding">
 				<span class="grid 1of1">
 					Hey, I&rsquo;m James.<br />
