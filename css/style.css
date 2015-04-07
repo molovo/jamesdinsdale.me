@@ -658,7 +658,7 @@ section#skills {
 
 	@media print {
 		body {
-			font-size: 80%;
+			font-size: 8pt;
 			background: white;
 		}
 
@@ -691,7 +691,7 @@ section#skills {
 			right: 0px;
 		}
 
-		section#open-source {
+		/*section#open-source {
 			margin-top: 9em;
-		}
+		}*/
 	}
