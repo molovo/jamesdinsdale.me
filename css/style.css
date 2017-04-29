@@ -565,7 +565,9 @@ aside#dba-details {
 	}
 
 
-
+.container section.grid {
+  padding: 0 1.5em 1.5em;
+}
 section#skills {
 	letter-spacing: -.4em;
 }
@@ -671,7 +673,7 @@ section#skills {
 		aside#logo p {
 			font-size: .82em;
 		}
-		aside#logo .download {
+		aside#logo nav {
 			display: none;
 		}
 
